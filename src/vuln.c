@@ -17,9 +17,9 @@ void win(unsigned int arg1, unsigned int arg2) {
   }
 
   fgets(buf,FLAGSIZE,f);
-  if (arg1 != 0xCAFEF00D)
+  if (arg1 != 0x12345678)
     return;
-  if (arg2 != 0xF00DF00D)
+  if (arg2 != 0xF00D1111)
     return;
   printf(buf);
 }
